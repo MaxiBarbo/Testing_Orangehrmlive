@@ -11,6 +11,7 @@ class indexitems{
             cy.get(locator.iconoPass).should(items)
             cy.get(locator.iconoUser).should(items)
             cy.get(locator.btnLogin).should(items)
+            cy.get(locator.linkForgot).should(items)
         })     
     }
 }

@@ -1,0 +1,16 @@
+{
+    "inputSearch" : ".oxd-main-menu-search > .oxd-input",
+    "linksup1" : ".--visited > .oxd-topbar-body-nav-tab-item",
+    "linksup2" : ".oxd-topbar-body-nav > ul > :nth-child(2)",
+    "linksup3" : ".oxd-topbar-body-nav > ul > :nth-child(3)",
+    "linksup4" : ".oxd-topbar-body-nav > ul > :nth-child(4)",
+    "linksup5" : ".oxd-topbar-body-nav > ul > :nth-child(5)",
+    "navbtnder1" : ":nth-child(1) > .oxd-main-menu-item",
+    "navbtnder2": ":nth-child(2) > .oxd-main-menu-item",
+    "linksup6" : ".--parent > .oxd-topbar-body-nav-tab-item",
+    "linksup7" : ".--visited > .oxd-topbar-body-nav-tab-item",
+    "linksup8" : ":nth-child(3) > .oxd-topbar-body-nav-tab-item",
+    "linksup9" : ":nth-child(4) > .oxd-topbar-body-nav-tab-item"
+    
+
+}

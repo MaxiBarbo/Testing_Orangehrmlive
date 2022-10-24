@@ -4,8 +4,12 @@
     "iconos" : ".orangehrm-login-footer-sm",
     "loginText" : ".oxd-text--h5",
     "userText" : ":nth-child(2) > .oxd-input-group > .oxd-input-group__label-wrapper > .oxd-label",
+    "userInput" : ":nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input",
     "passText" : ":nth-child(3) > .oxd-input-group > .oxd-input-group__label-wrapper > .oxd-label",
+    "passInput" : ":nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-input",
     "iconoUser" : ":nth-child(2) > .oxd-input-group > .oxd-input-group__label-wrapper > .oxd-icon",
     "iconoPass" : ":nth-child(3) > .oxd-input-group > .oxd-input-group__label-wrapper > .oxd-icon",
-    "btnLogin" : ".oxd-button"
+    "btnLogin" : ".oxd-button",
+    "linkForgot" : ".orangehrm-login-forgot > .oxd-text"
+    
 }

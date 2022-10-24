@@ -9,8 +9,15 @@
 // ***********************************************
 //
 //
+
 // -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
+ Cypress.Commands.add('login', (user, password) => { // Comando para Iniciar session
+    cy.fixture('local').then((local)=>{
+        cy.get(local.userInput).type(user)
+        cy.get(local.passInput).type(password)
+        cy.get(local.btnLogin).click()
+    })
+  })
 //
 //
 // -- This is a child command --
