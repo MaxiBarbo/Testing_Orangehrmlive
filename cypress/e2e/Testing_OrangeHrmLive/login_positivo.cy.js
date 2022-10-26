@@ -1,4 +1,4 @@
-describe('Testing en Login', () => {
+describe('Testing y check links luego del Login', () => {
 
     beforeEach(() => {
         cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
@@ -41,5 +41,4 @@ describe('Testing en Login', () => {
             cy.get(home.inputSearch).type('buzz').clear()            
         })  
     }) 
- 
 })

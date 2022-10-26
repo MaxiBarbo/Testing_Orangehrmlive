@@ -10,7 +10,14 @@
     "linksup6" : ".--parent > .oxd-topbar-body-nav-tab-item",
     "linksup7" : ".--visited > .oxd-topbar-body-nav-tab-item",
     "linksup8" : ":nth-child(3) > .oxd-topbar-body-nav-tab-item",
-    "linksup9" : ":nth-child(4) > .oxd-topbar-body-nav-tab-item"
-    
+    "linksup9" : ":nth-child(4) > .oxd-topbar-body-nav-tab-item",
+    "text1" : ":nth-child(2) > .oxd-input",
+    "text2" : ".oxd-autocomplete-text-input > input",
+    "adminSelectBtn" : ":nth-child(2) > .oxd-input-group",
+    "statuSelectBtn" : ":nth-child(4) > .oxd-input-group",
+    "searchBtn" : ".oxd-form-actions > .oxd-button--secondary",
+    "linkSupAdmin" : ".oxd-topbar-body-nav-tab-item",
+    "headerText" : ".oxd-topbar-header-title",
+    "userMenu" : ".oxd-userdropdown-tab"
 
 }
