@@ -18,6 +18,6 @@
     "searchBtn" : ".oxd-form-actions > .oxd-button--secondary",
     "linkSupAdmin" : ".oxd-topbar-body-nav-tab-item",
     "headerText" : ".oxd-topbar-header-title",
-    "userMenu" : ".oxd-userdropdown-tab"
-
+    "userMenu" : ".oxd-userdropdown-tab",
+    "AdminRowTable" : ".oxd-table-row"
 }

@@ -32,6 +32,14 @@ Cypress.Commands.add('headerText',(seccion) => {
     })
 })
 
+Cypress.Commands.add('checkUser',(user)=>{ // Comando para activar el checbox al escribir nombre del usuario
+    cy.fixture('home').then((home)=>{
+        cy.contains(home.AdminRowTable, user)
+        .find('input')
+        .check({force:true})
+    })
+})
+
 //
 // 
 // -- This is a child command --
