@@ -19,5 +19,6 @@
     "linkSupAdmin" : ".oxd-topbar-body-nav-tab-item",
     "headerText" : ".oxd-topbar-header-title",
     "userMenu" : ".oxd-userdropdown-tab",
-    "AdminRowTable" : ".oxd-table-row"
+    "AdminRowTable" : ".oxd-table-row",
+    "menuItems" : ".oxd-main-menu-item"
 }

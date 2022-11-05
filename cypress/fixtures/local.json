@@ -10,6 +10,9 @@
     "iconoUser" : ":nth-child(2) > .oxd-input-group > .oxd-input-group__label-wrapper > .oxd-icon",
     "iconoPass" : ":nth-child(3) > .oxd-input-group > .oxd-input-group__label-wrapper > .oxd-icon",
     "btnLogin" : ".oxd-button",
-    "linkForgot" : ".orangehrm-login-forgot > .oxd-text"
+    "linkForgot" : ".orangehrm-login-forgot > .oxd-text",
+    "alertMesaje" : ".oxd-alert",
+    "checkAlertText1" : ":nth-child(2) > .oxd-input-group > .oxd-text",
+    "checkAlertText2" : ":nth-child(3) > .oxd-input-group > .oxd-text"
     
 }

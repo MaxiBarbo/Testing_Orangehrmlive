@@ -1,24 +1,23 @@
-import indexitems from './index_items'
+import IndexItems from '../../pages/index_items'
+
+const homeIndex = new IndexItems
 
 describe('Testing en pagina Login', () => {
 
     beforeEach(() => {
-        cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+        homeIndex.navigatePage()
     })
 
     it('Login Campos Vacios', () => { // Se prueba Login mediante un caso de prueba Negativo dejando campos de datos vacios
-        cy.get('.oxd-button').click()
-        cy.get(':nth-child(2) > .oxd-input-group > .oxd-text').should('be.visible').contains('Required')
-        cy.get(':nth-child(3) > .oxd-input-group > .oxd-text').should('be.visible').contains('Required')
+       homeIndex.CheckLogin()
     })
 
     it('Login Credenciales Incorrectas', () => { // Se prueba Login mediante un caso de prueba Negativo (Se busca no poder realizar Login)
-        cy.login('abcd','abcd')
-        cy.get('.oxd-alert').contains('Invalid credentials')
+        homeIndex.incorrectLogin('lalo','landa')
     })
  
     it('Check Items Login', () => {
-        indexitems.verifyItems('exist')// Checkeamos que esten visibles todos los elementos en el Login utilizando Pages Object mediante .Json
+        homeIndex.verifyItems('exist')// Checkeamos que esten visibles todos los elementos en el Login utilizando Pages Object mediante .Json
         
     })
 

@@ -4,14 +4,20 @@
   "description": "Qa",
   "main": "index.js",
   "scripts": {
-    "test_chrome": "cypress run --spec cypress/e2e/test_divisas.cy.js --browser chrome", 
-    "test_edge": "cypress run --spec cypress/e2e/test_divisas.cy.js --browser edge",
-    "cypress_open":"cypress open"
-   
+    "test_chrome": "cypress run --spec cypress/e2e/Testing_OrangeHrmLive/Admin_Seccion.cy.js --browser chrome", 
+    "test_mocha" : "cypress run reporter mochawesome --spec cypress/e2e/Testing_OrangeHrmLive/Testing_en_inicio.cy.js",
+    "test_mocha_pim" : "cypress run reporter mochawesome --spec cypress/e2e/Testing_OrangeHrmLive/Pim_seccion.cy.js", 
+    "test_mocha_admin" : "cypress run reporter mochawesome --spec cypress/e2e/Testing_OrangeHrmLive/Admin_Seccion.cy.js",
+    "test_mocha_exploratorio" : "cypress run reporter mochawesome --spec cypress/e2e/test/testingExploratorio.cy.js",
+    "cypress_open": "cypress open"
   },
   "author": "Bonpland",
   "license": "ISC",
   "dependencies": {
     "cypress": "^10.10.0"
+  },
+  "devDependencies": {
+    "mochawesome": "^7.1.3"
   }
 }
+

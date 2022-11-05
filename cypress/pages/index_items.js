@@ -1,4 +1,19 @@
-class indexitems{ 
+class IndexItems{ 
+
+    navigatePage(){
+        cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+    }
+
+    CheckLogin(){
+        cy.get('.oxd-button').click()
+        cy.get(':nth-child(2) > .oxd-input-group > .oxd-text').should('be.visible').contains('Required')
+        cy.get(':nth-child(3) > .oxd-input-group > .oxd-text').should('be.visible').contains('Required')
+    }
+    
+    incorrectLogin(user,pass){
+        cy.login(user,pass)
+        cy.get('.oxd-alert').contains('Invalid credentials')
+    }
 
     verifyItems = (items) => {
         cy.fixture('local.json').then((locator)=>{
@@ -14,6 +29,8 @@ class indexitems{
             cy.get(locator.linkForgot).should(items)
         })     
     }
+
+    
 }
 
-export default new indexitems
+export default IndexItems

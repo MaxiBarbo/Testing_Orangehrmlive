@@ -1,0 +1,176 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-11-05T01:50:20.418Z",
+    "end": "2022-11-05T01:50:50.637Z",
+    "duration": 30219,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5bc2e217-afa7-49e0-96e8-fe9fdab8c1e3",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\testingExploratorio.cy.js",
+      "file": "cypress\\e2e\\test\\testingExploratorio.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "11c8b012-3bea-4085-a719-c31d63869970",
+          "title": "Casos de Prueba en Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Check Elementos existentes",
+              "fullTitle": "Casos de Prueba en Login Check Elementos existentes",
+              "timedOut": null,
+              "duration": 8792,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Resultado Esperado: Test de todos los elementos sean visibles y existentes en el DOM\nhome.verifyItems('exist');",
+              "err": {},
+              "uuid": "9eb7c2be-6d22-493f-9fd7-14392a16fd3a",
+              "parentUUID": "11c8b012-3bea-4085-a719-c31d63869970",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validamos las Cookies",
+              "fullTitle": "Casos de Prueba en Login Validamos las Cookies",
+              "timedOut": null,
+              "duration": 4727,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Resultado Esperado: Las canitdad y existencia de cookies sean las correctas\nhome.checkCookies(); // Validamos la existencia de cookies\nhome.checkCookiesData('name', 'orangehrm'); // Validamos el name de la o las Cookies",
+              "err": {},
+              "uuid": "da8711af-a577-45e0-b1da-e405fedb6a70",
+              "parentUUID": "11c8b012-3bea-4085-a719-c31d63869970",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ingreso de credenciales Incorrectas",
+              "fullTitle": "Casos de Prueba en Login Ingreso de credenciales Incorrectas",
+              "timedOut": null,
+              "duration": 4441,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Resultado Esperado: Aviso mediante un mensaje en pantalla el Resultado del Login\nhome.credenciales('juan', '1234'); // Ingresamos credenciales no registradas  \ncy.get('.oxd-alert').contains('Invalid credentials').should('exist'); // Validamos el Mensaje de Alerta al no poder Ingresar",
+              "err": {},
+              "uuid": "b70b39a8-088b-4c8d-bd6b-853e35260d5a",
+              "parentUUID": "11c8b012-3bea-4085-a719-c31d63869970",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ingreso con campos User y Pass vacios",
+              "fullTitle": "Casos de Prueba en Login Ingreso con campos User y Pass vacios",
+              "timedOut": null,
+              "duration": 1745,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Resultado esperado: Aviso con mensaje en pantalla mostrando texto \"Required\" en campos mencionados\ncy.get('.oxd-button').click();\nhome.checkTextAlert('Required'); // Check text alert en Username y Password",
+              "err": {},
+              "uuid": "96ae0307-ded6-4641-9a7a-e68e371d1515",
+              "parentUUID": "11c8b012-3bea-4085-a719-c31d63869970",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ingreso con credenciales Correctas",
+              "fullTitle": "Casos de Prueba en Login Ingreso con credenciales Correctas",
+              "timedOut": null,
+              "duration": 8780,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Resultado esperado: Ingreso a platafroma con credenciales correctas y luego crealizamos un logout\nhome.credenciales('Admin', 'admin123'); // Ingresamos credenciales correctas de registro\nhome.logout(); // Realizamos un Logout",
+              "err": {},
+              "uuid": "cb905af9-486e-41c4-900b-2833b577b2f3",
+              "parentUUID": "11c8b012-3bea-4085-a719-c31d63869970",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9eb7c2be-6d22-493f-9fd7-14392a16fd3a",
+            "da8711af-a577-45e0-b1da-e405fedb6a70",
+            "b70b39a8-088b-4c8d-bd6b-853e35260d5a",
+            "96ae0307-ded6-4641-9a7a-e68e371d1515",
+            "cb905af9-486e-41c4-900b-2833b577b2f3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 28485,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
